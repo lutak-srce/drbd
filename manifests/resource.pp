@@ -42,7 +42,7 @@ define drbd::resource (
   $fs_type       = 'ext4'
 ) {
   include drbd
-  include concat::setup
+  #include concat::setup
 
   Exec {
     path      => ['/bin', '/sbin', '/usr/bin'],

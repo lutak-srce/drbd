@@ -27,7 +27,7 @@ describe 'drbd::resource', :type => :define do
 
       describe "with no drbd::resource's exported" do
         it { should include_class('drbd') }
-        it { should include_class('concat::setup') }
+#        it { should include_class('concat::setup') }
         it { should contain_concat__fragment("mock_drbd_resource drbd header") }
         it { should contain_concat__fragment("mock_drbd_resource drbd footer") }
         it { should_not contain_service('drbd') }
